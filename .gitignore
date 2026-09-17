@@ -1,0 +1,28 @@
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.so
+*.a
+*.dll
+*.lib
+
+# Executables
+*.exe
+*.out
+test
+examples/test
+
+# Build directories
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
