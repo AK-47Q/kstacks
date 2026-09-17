@@ -1,3 +1,5 @@
+![LOGO](assets/KSTACK_logo_id0000.jpg)
+
 ## kstacks
 
 A lightweight, dependency-free byte-level stack implementation in pure C.
@@ -14,7 +16,7 @@ A lightweight, dependency-free byte-level stack implementation in pure C.
 
 Check examples/
 
-##Build
+## Build
 
 ```bash
 make clean && make
@@ -22,17 +24,18 @@ make clean && make
 
 Produces libkstacks.a.
 
-##API
+## API
 
-#[Function |  Description]
-kcreate | Initialize the stack
-kfree | Free the stack
-kpush | Push a byte
-kpop | Pop a byte
-kpeek | View top byte without removing
-kexpand | Expand the stack
-kcount | Count elements
+| Function | Description |
+|----------|-------------|
+| `kcreate` | Initialize the stack |
+| `kfree`   | Free the stack |
+| `kpush`   | Push a byte |
+| `kpop`    | Pop a byte |
+| `kpeek`   | View top byte without removing |
+| `kexpand` | Expand the stack |
+| `kcount`  | Count elements |
 
-##License
+## License
 
-MIT
+MIT (check LICENSE)
