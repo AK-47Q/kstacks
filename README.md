@@ -2,7 +2,7 @@
 
 ## kstacks
 
-A lightweight, dependency-free (not even libc) byte-level stack implementation in pure C.
+A lightweight, dependency-free (not even libc) byte-level stack implementation in pure C. It can work on Every device that have a cpu (even your nokia, microwave, bare-metal environment, and embedded).
 
 ## Features
 
