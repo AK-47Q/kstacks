@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -Iheaders
+CFLAGS = -ffreestanding -nostdlib -Wall -Wextra -std=c99 -Iheaders
 
 all: libkstacks.a
 

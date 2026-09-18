@@ -2,12 +2,14 @@
 
 ## kstacks
 
-A lightweight, dependency-free byte-level stack implementation in pure C.
+A lightweight, dependency-free (not even libc) byte-level stack implementation in pure C.
 
 ## Features
 
 - No external dependencies
 - Custom type definitions (no stdint.h/stddef.h)
+- No libc needed
+- Pluggable allocator interface via `kinit_allocator()`
 - Byte-level operations
 - Dynamic expansion
 - Error handling via return values and error pointers
@@ -28,6 +30,7 @@ Produces libkstacks.a.
 
 | Function | Description |
 |----------|-------------|
+| `kinit_allocator` | Initialize the allocator |
 | `kcreate` | Initialize the stack |
 | `kfree`   | Free the stack |
 | `kpush`   | Push a byte |

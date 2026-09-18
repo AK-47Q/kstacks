@@ -10,6 +10,11 @@
 #define NO_SP -2
 
 typedef struct {
+    k_malloc_t malloc;
+    k_free_t free;
+    k_realloc_t realloc; // optional, can be NULL if you dont want it
+} kallocator_t;
+typedef struct {
     uint32_t id;
     uint64_t size;
     uint8_t *addr;
@@ -17,6 +22,7 @@ typedef struct {
     uint8_t flag;
 } kstack_t;
 
+k_bool kinit_allocator(kallocator_t *alr);
 void kcreate(kstack_t *sp);
 void kfree(kstack_t *sp);
 void kpush(kstack_t *sp, uint8_t value);
